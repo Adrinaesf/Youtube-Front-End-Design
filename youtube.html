@@ -1,117 +1,84 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Youtube.com clone </title>
+    <title> YouTube.com Clone </title>
+    
     <style>
-      .video_info{
-        background-color: rgb(249, 245, 245);
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding-bottom: 300px;
-        padding-top: 100px;
-        column-gap: 8px;
-        row-gap: 22px;
-      }
-      
-      .video_info_1{
-        background-color: lightpink;
-        height: 275px;
+      .search_bar {
+        display: block;
+        font-size: 10px;
+        margin-left: 0px;
       }
 
-      .video_info_2{
-        background-color: lightblue;
-        height: 275px;
+      .video_preview {
+        display: inline-block;
+        width: 276px;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+      .thumbnail{     
+        display: block;
+        width: 276px;
+      }
+      .thumbnail_div{
+        margin-bottom: 12px;
       }
 
-      .video_info_3{
-        background-color: lightgreen;
-        height: 275px;
+      .profile_pic_div{
+        display: inline-block;
+        width: 50px; 
+        vertical-align: top;
       }
 
-      .video_info_4{
-        background-color: lightpink;
-        height: 275px;
+      .profile_pic_setting{
+        display: inline-block;
+        width: 40px; 
+        border-radius: 50px;
+
       }
 
-      .video_info_5{
-        background-color: lightblue;
-        height: 275px;
-        
+      .video_description_div{
+        display: inline-block;
       }
 
-      .video_info_6{
-        background-color: lightgreen;
-        height: 275px;
-      }
-
-
-      .video_info_7{
-        background-color: lightpink;
-        height: 275px;
-      }
-
-
-      .video_info_8{
-        background-color: lightblue;
-        height: 275px;
-      }
-
-
-      .video_info_9{
-        background-color: lightpink;
-        height: 275px;
-      }
-
-      .video_info_10{
-        background-color: lightblue;
-        height: 275px;
-      }
-
-      .video_info_11{
-        background-color: lightgreen;
-        height: 275px;
-      }
-
-      .video_info_12{
-        background-color: lightpink;
-        height: 275px;
+      .video_title{
+        font-size: 14px;
+        font-family: Arial;
+        margin-top: 0px;
       }
     </style>
   </head>
 
   <body>
-    <div class="video_info">
+    <input class="search_bar" type="text" placeholder="Search">
 
-      <div class="video_info_1">
-        <div class="thumbnail"> 
-          <img src="Thumbnails/hqdefault (1).webp">
+    <div class="video_preview"> 
+      <div class="thumbnail_div"> <!-- video thumbnail H-->
+        <img class="thumbnail" src="Thumbnails/advice.avif"> 
+      </div> 
+
+      <div> <!-- video description V: Profile pic + Texts -->
+        <div class="profile_pic_div"> 
+          <img class="profile_pic_setting" src="Profile Pictures/Lassie.jpg">
+        </div> 
+
+        <div class="video_description_div">
+          <p class="video_title"> LET THEM - JUST LET THEM </p>
+          <p class="video_author"> 4.9M views &#183; 1 year ago</p>
+          <p class="video_stats"> Looking at Life with Dee </p>
         </div>
-        <div class="video_info_grid">
-          <div class="channel_picture">
-            <img src="Profile Pictures/channel-1.jpeg">
+      </div> 
 
-          </div>
-          <div class="video_info">info</div>
-        </div>
-      </div>
-
-
-
-
-
-
-      <div class="video_info_2"> div 2 </div>
-      <div class="video_info_3"> div 3 </div>
-      <div class="video_info_4"> div 4 </div>
-      <div class="video_info_5"> div 5 </div>
-      <div class="video_info_6"> div 6 </div>
-      <div class="video_info_7"> div 7 </div>
-      <div class="video_info_8"> div 8 </div>
-      <div class="video_info_9"> div 9 </div>
-      <div class="video_info_10"> div 10 </div>
-      <div class="video_info_11"> div 11 </div>
-      <div class="video_info_12"> div 12 </div>
     </div>
-  </body>
 
+    <div class="video_preview"> 
+      <img class="thumbnail" src="Thumbnails/hqdefault (1).webp">
+
+      <p class="video_title"> i'm in a weird mood lol </p>
+      <p class="video_author"> 1.2M views &#183; 5 months ago</p>
+      <p class="video_stats"> emma chamberlain </p>
+    </div>
+
+  </body>
 </html>
