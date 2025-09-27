@@ -1,0 +1,64 @@
+<!-- 
+  In this file we have covered:
+  1. img element -> it is in body, it should have a src with path of the file. 
+  and so on
+    You can style it: 
+      width(height also changes), object-fit: cover; -> covers the shape and measuare
+
+  2. input eelement
+    tags: type="text", checkbox and more
+    lables of etxtbox: placeholder ="Search"
+
+  3. Display Property:
+    Block element: takes up the entire line, like <p></p>
+    Inline-block: Take up as much as they need
+    Inline element: Comes within a line of text like <strong></strong>
+
+    switch from block to inline-block, or vice-versa 
+    This helps to achive having elements in different lines if we want
+
+  4. div element:
+  Works as a container
+  REALLY USEFUL
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> YouTube.com Clone </title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        object-position: left;
+        border: 2px;
+        border-style: solid;
+        border-color: pink;
+        
+      }
+      
+      .search_bar{
+        font-size: 10px;
+        margin-left: 50px;
+      }
+
+      .div{
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <img class="thumbnail" src="Thumbnails/advice.avif">
+    <input class="search_bar" type="text" placeholder="Search">
+
+    <p> LET THEM - JUST LET THEM </p>
+    <p> 4.9M views &#183; 1 year ago</p>
+    <p> Looking at Life with Dee </p>
+    <div class="div"> This is a div</div>
+
+
+  </body>
+</html>
